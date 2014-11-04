@@ -21,8 +21,15 @@
 
     <!-- Add your site or application content here -->
     <header></header>
-    
-    <div ng-view=""></div>
+
+    <div class="container">
+        <ul class="menu">
+            <li class="active"><a href="#/">ADD TIME</a></li>
+            <li><a href="#/view_timesheets">VIEW TIMESHEETS</a></li>
+        </ul>
+        
+        <div ng-view=""></div>
+    </div>
 
     <footer></footer>
 
@@ -47,8 +54,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/addTime.js"></script>
         <script src="scripts/controllers/view_timesheets.js"></script>
         <script src="scripts/services/time_entries.js"></script>
         <script src="scripts/directives/header.js"></script>
