@@ -1,1 +1,21 @@
-<p>This is the view_timesheets view.</p>
+
+<table>
+    <tr>
+        <th>DATE</th>
+        <th>PERSON</th>
+        <th>CLIENT</th>
+        <th>PROJECT</th> 
+        <th>TASK</th> 
+        <th>DURATION</th> 
+        <th>NOTES</th>
+    </tr>
+    <tr ng-repeat="detail in details">
+        <td>{{detail.date}}</td>
+        <td>{{detail.person}}</td>
+        <td>{{detail.client}}</td>
+        <td>{{detail.project}}</td>
+        <td>{{detail.task}}</td>
+        <td>{{detail.duration}}</td>
+        <td>{{detail.notes}}</td>
+    </tr>
+</table>

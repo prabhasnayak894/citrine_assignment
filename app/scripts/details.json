@@ -1,0 +1,34 @@
+{
+	"details" : [
+		{
+			"id":1,
+			"date": "13 NOV",
+			"person":"Tom Stones",
+			"client": "Nike",
+			"project":"Buzz",
+			"task" : "Design",
+			"duration": "2 hrs",
+			"notes" : "sjfkjsnfkjsdnfkjsdn"
+		},
+		{
+			"id":2,
+			"date": "13 NOV",
+			"person":"Tom Stones",
+			"client": "Nike",
+			"project":"Buzz",
+			"task" : "Design",
+			"duration": "2 hrs",
+			"notes" : "sjfkjsnfkjsdnfkjsdn"
+		},
+		{
+			"id":3,
+			"date": "13 NOV",
+			"person":"Tom Stones",
+			"client": "Nike",
+			"project":"Buzz",
+			"task" : "Design",
+			"duration": "2 hrs",
+			"notes" : "sjfkjsnfkjsdnfkjsdn"
+		}
+	]
+}
