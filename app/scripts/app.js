@@ -25,7 +25,11 @@ angular
       })
       .when('/view_timesheets', {
         templateUrl: 'views/view_timesheets.html',
-        controller: 'ViewTimesheetsCtrl'
+        controller: 'ViewTimesheetsCtrl',
+        resolve: {
+          entries : ['timeEntries', function (timeEntries) {
+            return timeEntries.get_timeEnteries();
+        }]}
       })
       .otherwise({
         redirectTo: '/'

@@ -8,11 +8,11 @@ html, body, ul, li {
   margin: 0 auto;
 }
 /* header */
-header {
+header .header_wrapper {
   border-top: 30px solid #404040;
   background: #000000;
 }
-header a.logo {
+header .header_wrapper a.logo {
   background: url('../images/citrine-2.svg') no-repeat;
   display: block;
   height: 54px;

@@ -7,12 +7,14 @@
  * # header
  */
 angular.module('codeApp')
-  .directive('header', function () {
+  .directive('header', ['$location', function ($location) {
     return {
       templateUrl: 'views/header.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        
+        scope.isActive = function (viewLocation) { 
+	        return viewLocation === $location.path();
+	    };
       }
     };
-  });
+  }]);
