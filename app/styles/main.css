@@ -17,7 +17,7 @@ header .header_wrapper a.logo {
   display: block;
   height: 54px;
   margin: 25px 0 0;
-  padding-bottom: 25px;
+  padding-bottom: 21px;
   text-indent: -999999px;
   width: 215px;
 }
@@ -43,11 +43,52 @@ ul.menu li.active a, ul.menu li a:hover{
   color: #999;
 }
 
+/*breadcrumbs*/
+.breadCrumbs{
+  margin: 15px 0;
+  color: #999;
+  font-style: 12px;
+}
+.breadCrumbs a {
+  color: #999;
+  text-decoration: none;
+  text-transform: capitalize;
+}
 
 
+/*View timesheets table */
+.view-timesheets-table {
+  font-size: 12px;
+  text-align: left;
+}
+.view-timesheets-table thead tr th{
+  color: #999999;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  line-height: 26px;
+  font-weight: normal;
+}
+.view-timesheets-table thead tr th:last-child {
+  border-right: 1px solid #ccc;
+}
+.view-timesheets-table tbody tr td{
+  color: #404040;
+  padding: 5px 10px;
+  border-left: 1px solid #fff;
+}
+.view-timesheets-table tbody tr.even{
+  background-color: #e5e5e5;
+}
+.view-timesheets-table tbody tr.odd{
+  background-color: #f2f2f2;
+}
 
 /*footer*/
 footer {
-  height: 44px;
   background-color: #3f3f3f;
+  bottom: 0;
+  height: 44px;
+  position: fixed;
+  width: 100%;
 }
