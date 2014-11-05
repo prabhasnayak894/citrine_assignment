@@ -2,32 +2,52 @@
 	"details" : [
 		{
 			"id":1,
-			"date": "13 NOV",
+			"date": "12 NOV",
 			"person":"Tom Stones",
 			"client": "Nike",
 			"project":"Buzz",
 			"task" : "Design",
-			"duration": "2 hrs",
+			"duration": "2 hrs 30 mins",
 			"notes" : "sjfkjsnfkjsdnfkjsdn"
 		},
 		{
 			"id":2,
 			"date": "13 NOV",
 			"person":"Tom Stones",
-			"client": "Nike",
-			"project":"Buzz",
+			"client": "we",
+			"project":"Assdf",
 			"task" : "Design",
-			"duration": "2 hrs",
+			"duration": "2 hrs 30 mins",
 			"notes" : "sjfkjsnfkjsdnfkjsdn"
 		},
 		{
 			"id":3,
-			"date": "13 NOV",
-			"person":"Tom Stones",
-			"client": "Nike",
-			"project":"Buzz",
+			"date": "15 NOV",
+			"person":"Abc Stones",
+			"client": "jmgh",
+			"project":"Opd",
 			"task" : "Design",
-			"duration": "2 hrs",
+			"duration": "2 hrs 20 mins",
+			"notes" : "sjfkjsnfkjsdnfkjsdn"
+		},
+		{
+			"id":4,
+			"date": "13 DEC",
+			"person":"Pqr Stones",
+			"client": "aaa",
+			"project":"VMG",
+			"task" : "Design",
+			"duration": "2 hrs 45 mins",
+			"notes" : "sjfkjsnfkjsdnfkjsdn"
+		},
+		{
+			"id":5,
+			"date": "13 NOV",
+			"person":"Xyz Stones",
+			"client": "bnv",
+			"project":"igh",
+			"task" : "Design",
+			"duration": "2 hrs 45 mins",
 			"notes" : "sjfkjsnfkjsdnfkjsdn"
 		}
 	]

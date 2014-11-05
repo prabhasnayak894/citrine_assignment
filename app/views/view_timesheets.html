@@ -1,28 +1,76 @@
 <div class="breadCrumbs">
-	<a href="#">timesheet</a> >
-	<a href="#/view_timesheets">view timesheets</a>
+    <a href="#">timesheet</a> >
+    <a href="#/view_timesheets">view timesheets</a>
 </div>
 <table width="100%" cellpadding="0" cellspacing="0" class="view-timesheets-table">
     <thead>
-    	<tr>
-	        <th>DATE</th>
-	        <th>PERSON</th>
-	        <th>CLIENT</th>
-	        <th>PROJECT</th> 
-	        <th>TASK</th> 
-	        <th>DURATION</th> 
-	        <th>NOTES</th>
-	    </tr>
+        <tr>
+            <th ng-click="orderByField='date'; reverseSort = !reverseSort">
+                DATE 
+                <span ng-show="orderByField == 'date'">
+                    <span ng-show="!reverseSort">&#9650;</span>
+                    <span ng-show="reverseSort">&#9660;</span>
+                </span>
+            </th>
+            <th ng-click="orderByField='person'; reverseSort = !reverseSort">
+                PERSON
+                <span ng-show="orderByField == 'person'">
+                    <span ng-show="!reverseSort">&#9650;</span>
+                    <span ng-show="reverseSort">&#9660;</span>
+                </span>
+            </th>
+            <th ng-click="orderByField='client'; reverseSort = !reverseSort">
+                CLIENT
+                <span ng-show="orderByField == 'client'">
+                    <span ng-show="!reverseSort">&#9650;</span>
+                    <span ng-show="reverseSort">&#9660;</span>
+                </span>
+            </th>
+            <th ng-click="orderByField='project'; reverseSort = !reverseSort">
+                PROJECT
+                <span ng-show="orderByField == 'project'">
+                    <span ng-show="!reverseSort">&#9650;</span>
+                    <span ng-show="reverseSort">&#9660;</span>
+                </span>
+            </th> 
+            <th ng-click="orderByField='task'; reverseSort = !reverseSort">
+                TASK
+                <span ng-show="orderByField == 'task'">
+                    <span ng-show="!reverseSort">&#9650;</span>
+                    <span ng-show="reverseSort">&#9660;</span>
+                </span>
+            </th> 
+            <th ng-click="orderByField='duration'; reverseSort = !reverseSort">
+                DURATION
+                <span ng-show="orderByField == 'duration'">
+                    <span ng-show="!reverseSort">&#9650;</span>
+                    <span ng-show="reverseSort">&#9660;</span>
+                </span>
+            </th> 
+            <th ng-click="orderByField='notes'; reverseSort = !reverseSort">
+                NOTES
+                <span ng-show="orderByField == 'notes'">
+                    <span ng-show="!reverseSort">&#9650;</span>
+                    <span ng-show="reverseSort">&#9660;</span>
+                </span>
+            </th>
+        </tr>
     </thead>
     <tbody>
-    	<tr ng-repeat="detail in entries" ng-class="{even: $even, odd: $odd}">
-	        <td>{{detail.date}}</td>
-	        <td>{{detail.person}}</td>
-	        <td>{{detail.client}}</td>
-	        <td>{{detail.project}}</td>
-	        <td>{{detail.task}}</td>
-	        <td>{{detail.duration}}</td>
-	        <td>{{detail.notes}}</td>
-	    </tr>
+        <tr ng-repeat="detail in entries | orderBy:orderByField:reverseSort" ng-class="{even: $even, odd: $odd}">
+            <td>{{detail.date}}</td>
+            <td>{{detail.person}}</td>
+            <td>{{detail.client}}</td>
+            <td>{{detail.project}}</td>
+            <td>{{detail.task}}</td>
+            <td>{{detail.duration}}</td>
+            <td>{{detail.notes}}</td>
+        </tr>
     </tbody>
+    <tfoot>
+        <td rowspan="1" colspan="1">TOTAL</td>
+        <td colspan="4" rowspan="1"> </td>
+        <td rowspan="1" colspan="1">{{total_hrs}} HRS {{total_mins}} MINS</td>
+        <td rowspan="1" colspan="1"> </td>
+    </tfoot>
 </table>

@@ -61,7 +61,7 @@ ul.menu li.active a, ul.menu li a:hover{
   font-size: 12px;
   text-align: left;
 }
-.view-timesheets-table thead tr th{
+.view-timesheets-table thead tr th, .view-timesheets-table tfoot tr td{
   color: #999999;
   padding: 0 10px;
   border: 1px solid #ccc;
@@ -82,6 +82,12 @@ ul.menu li.active a, ul.menu li a:hover{
 }
 .view-timesheets-table tbody tr.odd{
   background-color: #f2f2f2;
+}
+.view-timesheets-table thead tr th>span {
+  float: right;
+}
+.view-timesheets-table thead tr th{
+  cursor: pointer;
 }
 
 /*footer*/
